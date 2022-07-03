@@ -1,8 +1,8 @@
-def code
-
 node {
-   stage('Load') {
-    code = load 'parameter.Groovy'
+   steps {
+    script {
+       load "$https://github.com/Hivralegovind/Jenkinsfile11/blob/main/parameter.Groovy"
+    }
   }
 }
 
